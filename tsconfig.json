@@ -1,0 +1,52 @@
+ {
+  "compilerOptions": {
+    "target": "es2020",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "preserveConstEnums": true,
+    "noEmit": true,
+    "sourceMap": false,
+    "module":"commonjs",
+    "moduleResolution":"node",
+    "esModuleInterop": true, 
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true, 
+    "isolatedModules": false, 
+    "noImplicitAny": false,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": [
+        "*"
+      ],
+      "@controllers/*": [
+        "mvc/controllers"
+      ],
+      "@interfaces/*": [
+        "interfaces/*"
+      ],
+      "@mvc/*": [
+        "mvc/*"
+      ],
+      "@middlewares/*": [
+        "middlewares/*"
+      ],
+      "@models/*": [
+        "mvc/models"
+      ],
+      "@routes": [
+        "mvc/routes/index.ts"
+      ],
+      "@routes/*": [
+        "mvc/routes/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@helpers/*": [
+        "helpers/*"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
